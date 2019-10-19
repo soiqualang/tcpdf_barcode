@@ -2,6 +2,7 @@
   <head>
     <title></title>
     <meta content="">
+    <link media="print" rel="Alternate" href="print.pdf">
     <style>
     img {
       width: 20mm;
@@ -11,10 +12,30 @@
       padding-left: 7.5mm;
       padding-right: 7.5mm;
     }
+    table.portrait {
+      width: 190mm;
+      height: 276mm;
+    }
+    table.landscape {
+      width: 276mm;
+      height: 190mm;
+      transform: rotate(270deg) translate(-276mm, 0);
+      transform-origin: 0 0;
+    }
+    table.cus1 {
+      width: 110mm;
+      height: 45mm;
+    }
+    @media print {
+    body {
+      margin: 0;
+      color: #000;
+      background-color: #fff;
+    }
     </style>
   </head>
   <body>
-    <table>
+    <table class="cus1">
       <tr>
         <td><img src="t1.png"></td>
         <td><img src="t1.png"></td>
