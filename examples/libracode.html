@@ -1,0 +1,257 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<title>libra code</title>
+<meta name="ROBOTS" content="ALL"> 
+<style type="text/css"> 
+textarea { font-family: "Arial Unicode MS", Batang }
+</style> 
+ 
+ 
+<script src="him.js" type="text/javascript"></script> 
+<script language="JavaScript">
+function flip() {
+ var result = flipString(document.f.original.value.toLowerCase());
+ document.f.flipped.value = result;
+}
+function bodau(strinput){
+//code by Minit - www.canthoit.info - 13-05-2009
+var str = strinput;
+str= str.toLowerCase();
+str= str.replace(/à|á|ạ|ả|ã/g,"a");
+str= str.replace(/â|ầ|ấ|ậ|ẩ|ẫ/g,"â");
+str= str.replace(/ă|ằ|ắ|ặ|ẳ|ẵ/g,"ă");
+str= str.replace(/è|é|ẹ|ẻ|ẽ/g,"e");
+str= str.replace(/ê|ề|ế|ệ|ể|ễ/g,"ê");
+str= str.replace(/ì|í|ị|ỉ|ĩ/g,"i");
+str= str.replace(/ò|ó|ọ|ỏ|õ/g,"o");
+str= str.replace(/ô|ồ|ố|ộ|ổ|ỗ/g,"ô");
+str= str.replace(/ơ|ờ|ớ|ợ|ở|ỡ/g,"ơ");
+str= str.replace(/ù|ú|ụ|ủ|ũ/g,"u");
+str= str.replace(/ư|ừ|ứ|ự|ử|ữ/g,"ư");
+str= str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g,"y");
+str= str.replace(/đ/g,"d");
+/*
+str= str.replace(/!|@|\$|%|\^|\*|\(|\)|\+|\=|\<|\>|\?|\/|,|\.|\:|\'| |\"|\&|\#|\[|\]|~/g,"-");
+str= str.replace(/-+-/g,"-"); //thay thế 2- thành 1-
+*/
+str= str.replace(/^\-+|\-+$/g,"");//cắt bỏ ký tự - ở đầu và cuối chuỗi
+return str;
+}
+function flipString(aString){
+var str = bodau(aString);
+str= str.toLowerCase();
+//4 chu cai
+str= str.replace(/iêng/g,"306");
+str= str.replace(/oang/g,"407");
+str= str.replace(/oăng/g,"416");
+str= str.replace(/oanh/g,"408");
+str= str.replace(/oach/g,"403");
+str= str.replace(/oeng/g,"424");
+str= str.replace(/oong/g,"433");
+str= str.replace(/ôông/g,"456");
+str= str.replace(/uâng/g,"503");
+str= str.replace(/uêch/g,"508");
+str= str.replace(/uênh/g,"509");
+str= str.replace(/uông/g,"518");
+str= str.replace(/ương/g,"561");
+str= str.replace(/uych/g,"525");
+str= str.replace(/uyêc/g,"526");
+str= str.replace(/uyên/g,"527");
+str= str.replace(/uyêt/g,"528");
+str= str.replace(/uynh/g,"531");
+str= str.replace(/yêng/g,"604");
+// 3 chu cai
+str= str.replace(/anh/g,"107");
+str= str.replace(/ăng/g,"116");
+str= str.replace(/âng/g,"122");
+str= str.replace(/ang/g,"106");
+str= str.replace(/ach/g,"102");
+str= str.replace(/eng/g,"204");
+str= str.replace(/êng/g,"255");
+str= str.replace(/ênh/g,"256");
+str= str.replace(/ich/g,"302");
+str= str.replace(/iêc/g,"303");
+str= str.replace(/iêm/g,"304");
+str= str.replace(/iên/g,"305");
+str= str.replace(/iêp/g,"307");
+str= str.replace(/iêt/g,"308");
+str= str.replace(/iêu/g,"309");
+str= str.replace(/inh/g,"312");
+str= str.replace(/oac/g,"402");
+str= str.replace(/oăc/g,"413");
+str= str.replace(/oai/g,"404");
+str= str.replace(/oam/g,"405");
+str= str.replace(/oăm/g,"414");
+str= str.replace(/oan/g,"406");
+str= str.replace(/oăn/g,"415");
+str= str.replace(/oao/g,"409");
+str= str.replace(/oap/g,"410");
+str= str.replace(/oăp/g,"417");
+str= str.replace(/oat/g,"411");
+str= str.replace(/oăt/g,"418");
+str= str.replace(/oay/g,"412");
+str= str.replace(/oec/g,"421");
+str= str.replace(/oem/g,"422");
+str= str.replace(/oen/g,"423");
+str= str.replace(/oeo/g,"425");
+str= str.replace(/oep/g,"426");
+str= str.replace(/oet/g,"427");
+str= str.replace(/ong/g,"431");
+str= str.replace(/ông/g,"455");
+str= str.replace(/ơng/g,"465");
+str= str.replace(/ooc/g,"432");
+str= str.replace(/ung/g,"513");
+str= str.replace(/ưng/g,"556");
+str= str.replace(/uân/g,"502");
+str= str.replace(/uât/g,"504");
+str= str.replace(/uây/g,"505");
+str= str.replace(/uôc/g,"514");
+str= str.replace(/ươc/g,"557");
+str= str.replace(/uôi/g,"515");
+str= str.replace(/ươi/g,"558");
+str= str.replace(/uôm/g,"516");
+str= str.replace(/ươm/g,"559");
+str= str.replace(/uôn/g,"517");
+str= str.replace(/ươn/g,"560");
+str= str.replace(/ươp/g,"562");
+str= str.replace(/uôt/g,"519");
+str= str.replace(/ươt/g,"563");
+str= str.replace(/ươu/g,"564");
+str= str.replace(/uya/g,"524");
+str= str.replace(/uym/g,"529");
+str= str.replace(/uyn/g,"530");
+str= str.replace(/uyp/g,"532");
+str= str.replace(/uyu/g,"534");
+str= str.replace(/ych/g,"601");
+str= str.replace(/yêm/g,"602");
+str= str.replace(/yên/g,"603");
+str= str.replace(/yêt/g,"605");
+str= str.replace(/yêu/g,"606");
+str= str.replace(/ynh/g,"609");
+// 2 chu cai
+str= str.replace(/ăn/g,"115");
+str= str.replace(/ân/g,"121");
+str= str.replace(/an/g,"105");
+str= str.replace(/ăm/g,"114");
+str= str.replace(/âm/g,"120");
+str= str.replace(/am/g,"104");
+str= str.replace(/ai/g,"103");
+str= str.replace(/ăc/g,"113");
+str= str.replace(/âc/g,"119");
+str= str.replace(/ac/g,"101");
+str= str.replace(/ao/g,"108");
+str= str.replace(/ap/g,"109");
+str= str.replace(/âp/g,"123");
+str= str.replace(/ăp/g,"117");
+str= str.replace(/at/g,"110");
+str= str.replace(/ât/g,"124");
+str= str.replace(/ăt/g,"118");
+str= str.replace(/au/g,"111");
+str= str.replace(/âu/g,"125");
+str= str.replace(/ay/g,"112");
+str= str.replace(/ây/g,"126");
+str= str.replace(/ec/g,"201");
+str= str.replace(/êc/g,"252");
+str= str.replace(/em/g,"202");
+str= str.replace(/êm/g,"253");
+str= str.replace(/en/g,"203");
+str= str.replace(/ên/g,"254");
+str= str.replace(/eo/g,"205");
+str= str.replace(/ep/g,"206");
+str= str.replace(/êp/g,"257");
+str= str.replace(/et/g,"207");
+str= str.replace(/êt/g,"258");
+str= str.replace(/êu/g,"259");
+str= str.replace(/ia/g,"301");
+str= str.replace(/im/g,"310");
+str= str.replace(/in/g,"311");
+str= str.replace(/ip/g,"313");
+str= str.replace(/it/g,"314");
+str= str.replace(/iu/g,"315");
+str= str.replace(/oa/g,"401");
+str= str.replace(/oc/g,"419");
+str= str.replace(/ôc/g,"451");
+str= str.replace(/ơc/g,"461");
+str= str.replace(/oe/g,"420");
+str= str.replace(/oi/g,"428");
+str= str.replace(/ôi/g,"452");
+str= str.replace(/ơi/g,"462");
+str= str.replace(/om/g,"429");
+str= str.replace(/ôm/g,"453");
+str= str.replace(/ơm/g,"463");
+str= str.replace(/on/g,"430");
+str= str.replace(/ôn/g,"454");
+str= str.replace(/ơn/g,"464");
+str= str.replace(/op/g,"434");
+str= str.replace(/ôp/g,"457");
+str= str.replace(/ơp/g,"466");
+str= str.replace(/ot/g,"435");
+str= str.replace(/ôt/g,"458");
+str= str.replace(/ơt/g,"467");
+str= str.replace(/ua/g,"501");
+str= str.replace(/ưa/g,"551");
+str= str.replace(/ưc/g,"552");
+str= str.replace(/ue/g,"506");
+str= str.replace(/uê/g,"507");
+str= str.replace(/ui/g,"510");
+str= str.replace(/ưi/g,"553");
+str= str.replace(/um/g,"511");
+str= str.replace(/ưm/g,"554");
+str= str.replace(/un/g,"512");
+str= str.replace(/ưn/g,"555");
+str= str.replace(/uơ/g,"520");
+str= str.replace(/up/g,"521");
+str= str.replace(/ut/g,"522");
+str= str.replace(/ưt/g,"565");
+str= str.replace(/ưu/g,"566");
+str= str.replace(/uy/g,"523");
+str= str.replace(/ym/g,"607");
+str= str.replace(/yn/g,"608");
+str= str.replace(/yp/g,"610");
+str= str.replace(/yt/g,"611");
+//--------
+str= str.replace(/a/g,"100");
+str= str.replace(/e/g,"200");
+str= str.replace(/ê/g,"250");
+str= str.replace(/i/g,"300");
+str= str.replace(/o/g,"400");
+str= str.replace(/ô/g,"450");
+str= str.replace(/ơ/g,"460");
+str= str.replace(/u/g,"500");
+str= str.replace(/ư/g,"550");
+str= str.replace(/y/g,"600");
+
+str= str.replace(/^\-+|\-+$/g,""); 
+//cắt bỏ ký tự - ở đầu và cuối chuỗi 
+return str;
+}
+ 
+</script> 
+</head><body background="bg.gif" style="  background-color: rgb(255, 255,255); color: rgb(224, 20, 22);"> 
+<center> 
+<br><br> 
+ 
+<h1>libra code</h1> 
+ 
+<form name="f"> 
+<table width="500"> 
+   <tbody><tr> 
+       <td>Từ gốc:</td> 
+        <td><textarea rows="5" cols="55" name="original"></textarea>  </td> 
+ 
+    </tr> 
+    <tr> 
+       <td>Kết quả:</td> 
+        <td><textarea rows="5" cols="55" name="flipped"></textarea></td> 
+    </tr> 
+</tbody></table> 
+</form> 
+<br> 
+        <center><input value="Enter!" onClick="flip()" type="button"></center> 
+<br> 
+Có hỗ trợ tiếng việt<br> 
+ 
+</center></body> 
+
+ 
+</html>
